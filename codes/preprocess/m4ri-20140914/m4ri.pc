@@ -1,0 +1,10 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: M4RI
+Description: Dense linear algebra over GF(2).
+Version: 20140914
+Libs: -L${libdir} -lm4ri -lm
+Cflags: -I${includedir}/m4ri -g -O2  -mmmx -msse -msse2 -msse3 

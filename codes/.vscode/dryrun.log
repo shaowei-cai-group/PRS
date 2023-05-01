@@ -1,0 +1,10 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/chenzh/solvers/Light'
+g++ -c light.cpp -o light.o -Ikissat-inc -std=c++11 -O3 -lkissat -Lkissat-inc/build/ -lpthread -lz -lm -static
+g++ -c basekissat.cpp -o basekissat.o -Ikissat-inc -std=c++11 -O3 -lkissat -Lkissat-inc/build/ -lpthread -lz -lm -static
+g++ -c main.cpp -o main.o -Ikissat-inc -std=c++11 -O3 -lkissat -Lkissat-inc/build/ -lpthread -lz -lm -static
+g++ -c solve.cpp -o solve.o -Ikissat-inc -std=c++11 -O3 -lkissat -Lkissat-inc/build/ -lpthread -lz -lm -static
+g++ -c paras.cpp -o paras.o -Ikissat-inc -std=c++11 -O3 -lkissat -Lkissat-inc/build/ -lpthread -lz -lm -static
+g++ -o light light.o basekissat.o main.o solve.o paras.o -Ikissat-inc -std=c++11 -O3 -lkissat -Lkissat-inc/build/ -lpthread -lz -lm -static
+make: Leaving directory '/home/chenzh/solvers/Light'
+ 
